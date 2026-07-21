@@ -1,4 +1,4 @@
-# Hardware-Accelerated OFDM Transceiver (FPGA) 🚀
+# Hardware-Accelerated OFDM Transceiver (FPGA)
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2025b-blue?style=flat-square&logo=matlab)
 ![FPGA](https://img.shields.io/badge/Hardware-FPGA_Acceleration-orange?style=flat-square)
@@ -42,9 +42,9 @@ flowchart LR
     PS2 --> Demod[16-QAM<br>Demapper]
     Demod --> BER[BER / SER /<br>Throughput]
 
-    style IFFT fill:#e1d5e7,stroke:#9673a6,stroke-width:2px
-    style FFT fill:#e1d5e7,stroke:#9673a6,stroke-width:2px
-    style AWGN fill:#fff2cc,stroke:#d6b656,stroke-width:2px
+    style IFFT fill:#e1d5e7,stroke:#9673a6,stroke-width:2px,color:#000000
+    style FFT fill:#e1d5e7,stroke:#9673a6,stroke-width:2px,color:#000000
+    style AWGN fill:#fff2cc,stroke:#d6b656,stroke-width:2px,color:#000000
 ```
 
 ---
