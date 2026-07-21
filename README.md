@@ -62,12 +62,12 @@ Even against a multi-GHz CPU operating at maximum batch efficiency, the 500 MHz 
 
 | Symbols (S) | Software Time ($\mu$s) | Hardware Time ($\mu$s) | HW Speedup |
 | :---: | :---: | :---: | :---: |
-| 1 | 32.84 | 0.35 | **92.76$\times$** |
-| 10 | 46.13 | 0.48 | **95.70$\times$** |
-| 100 | 28.07 | 1.89 | **14.85$\times$** |
-| 1,000 | 199.73 | 16.23 | **12.31$\times$** |
-| 10,000 | 1292.84 | 160.23 | **8.07$\times$** |
-| 100,000 | 11301.84 | 1600.23 | **7.06$\times$** |
+| 1 | 32.84 | 0.35 | **92.76x** |
+| 10 | 46.13 | 0.48 | **95.70x** |
+| 100 | 28.07 | 1.89 | **14.85x** |
+| 1,000 | 199.73 | 16.23 | **12.31x** |
+| 10,000 | 1292.84 | 160.23 | **8.07x** |
+| 100,000 | 11301.84 | 1600.23 | **7.06x** |
 
 ### 2. Quantization Collapse (Throughput Saturation)
 To deploy an algorithm to an FPGA, variables must be truncated from 64-bit floats down to fixed-point formats. We swept the system to find the minimum stable word length:
@@ -75,6 +75,7 @@ To deploy an algorithm to an FPGA, variables must be truncated from 64-bit float
 <p align="center">
   <img src="plots/System%20Throughput%20Sweep.png" width="600" alt="Hardware Throughput Saturation Sweep">
 </p>
+
 * **Q(4.12) Format:** Perfectly mimics floating-point performance, saturating at the theoretical channel limit of **4.00 Mbps** around **13 dB** SNR.
 * **Q(4.8) Format:** Truncation noise dominates. It struggles to recover data and maxes out at a permanently crippled **3.49 Mbps**, completely ignoring Shannon's channel capacity.
 * **Q(4.6) & Below:** Massive quantization noise corrupts every single packet, causing system throughput to violently crash to **0.00 Mbps**.
