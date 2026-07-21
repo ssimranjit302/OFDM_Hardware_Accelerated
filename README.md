@@ -60,7 +60,7 @@ The hardware pipeline unrolls the internal FFT computational loops, mathematical
 
 Even against a multi-GHz CPU operating at maximum batch efficiency, the 500 MHz parallel hardware dominates:
 
-| Symbols (S) | Software Time ($\mu$s) | Hardware Time ($\mu$s) | HW Speedup |
+| Symbols (S) | Software Time (μs) | Hardware Time (μs) | HW Speedup |
 | :---: | :---: | :---: | :---: |
 | 1 | 32.84 | 0.35 | **92.76x** |
 | 10 | 46.13 | 0.48 | **95.70x** |
