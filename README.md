@@ -13,7 +13,7 @@ By leveraging MATLAB's `dsphdl` toolboxes, this project simulates exact gate-lev
 ---
 
 ## Design Objectives
-1. **Cycle-Accurate Hardware Emulation:** Translate a standard software FFT/IFFT pipeline into a hardware-accurate streaming Radix - $ 2^2 $ architecture.
+1. **Cycle-Accurate Hardware Emulation:** Translate a standard software FFT/IFFT pipeline into a hardware-accurate streaming Radix-2<sup>2</sup> architecture.
 2. **Quantization Analysis:** Evaluate Bit Error Rate (BER) and throughput collapse under various fixed-point word lengths (Q4.12, Q4.8, Q4.6).
 3. **Execution Time Complexity:** Prove the reduction in Big-O time complexity by unrolling FFT loops into parallel spatial silicon structures.
 4. **Presentation-Ready Profiling:** Provide a bulletproof, instantly-loading cached demo suite for live academic defenses.
