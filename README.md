@@ -1,4 +1,4 @@
-<h1 align="center">Hardware-Accelerated OFDM Transceiver (FPGA) 🚀</h1>
+<h1 align="center">Hardware-Accelerated OFDM Transceiver (FPGA) </h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/MATLAB-R2025b-blue?style=flat-square&logo=matlab" alt="MATLAB">
