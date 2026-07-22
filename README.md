@@ -1,9 +1,11 @@
+<div align="center">
 # Hardware-Accelerated OFDM Transceiver (FPGA)
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2025b-blue?style=flat-square&logo=matlab)
 ![FPGA](https://img.shields.io/badge/Hardware-FPGA_Acceleration-orange?style=flat-square)
 ![DSP](https://img.shields.io/badge/Toolbox-DSP_System_%7C_HDL_Coder-success?style=flat-square)
-
+<div align="center">
+    
 This repository contains a fully validated, **hardware-accurate Emulation of an Orthogonal Frequency-Division Multiplexing (OFDM) Transceiver**. It demonstrates the profound performance advantages of porting traditional CPU-based floating-point DSP algorithms into physical silicon using an **8-Core Spatial Parallelism Architecture**.
 
 By leveraging MATLAB's `dsphdl` toolboxes, this project simulates exact gate-level truncation, pipelining delays, and overflow saturation, mathematically proving that a massive execution speedup can be achieved without sacrificing data-link integrity.
